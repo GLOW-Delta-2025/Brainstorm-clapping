@@ -6,12 +6,12 @@ SAMPLE_RATE = 44100
 HIGH_FREQ_CUTOFF = 2000
 MIN_HIGH_FREQ_RATIO = 0.2
 
-THRESHOLD = 0.0  # minimum volume to detect a clap
+THRESHOLD = 1.2  # minimum volume to detect a clap
 DURATION = 0.01
 last_clap = 0
 intervals = []
 
-ATTACK_THRESHOLD = 1.0  # minimum jump in energy to count as a clap
+ATTACK_THRESHOLD = 0.3  # minimum jump in energy to count as a clap
 prev_volume = None
 
 def callback(indata, frames, time_info, status):
